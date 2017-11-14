@@ -6,7 +6,7 @@ export class SnackerService {
     config: MatSnackBarConfig = new MatSnackBarConfig();
     message = 'Hello from Snacker Service';
 
-    constructor(private snackbar: MatSnackBar) {
+    constructor(public snackbar: MatSnackBar) {
         this.config.duration = 5000;
         this.config.extraClasses = new Array<string>();
     }

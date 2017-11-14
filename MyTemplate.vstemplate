@@ -52,7 +52,7 @@
             <ProjectItem ReplaceParameters="true" TargetFileName="iservice.ts">iservice.ts</ProjectItem>
           </Folder>
           <Folder Name="models" TargetFolderName="models">
-            <ProjectItem ReplaceParameters="true" TargetFileName="theme.model.ts">theme.model.ts</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="theme.ts">theme.ts</ProjectItem>
           </Folder>
           <Folder Name="services" TargetFolderName="services">
             <ProjectItem ReplaceParameters="true" TargetFileName="core-api.service.ts">core-api.service.ts</ProjectItem>

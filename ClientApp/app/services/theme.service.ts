@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 import { OverlayContainer } from '@angular/cdk/overlay';
-import { Theme } from '../models/theme.model';
+import { Theme } from '../models/theme';
 
 const THEMES: Array<Theme> = [
     { name: 'light-green', display: 'Green - Light' },
@@ -17,7 +17,7 @@ export class ThemeService {
     activeTheme = new BehaviorSubject<Theme>(new Theme());
     themes: Array<Theme> = THEMES;
 
-    constructor(private overlayContainer: OverlayContainer) {
+    constructor(public overlayContainer: OverlayContainer) {
         this.setOverlayContainerTheme(this.themes[1].name);
         this.activeTheme.next(this.themes[1]);
     }

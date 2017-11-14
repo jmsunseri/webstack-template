@@ -7,7 +7,7 @@ import 'rxjs/add/operator/catch';
 
 @Injectable()
 export class CoreApiService {
-    constructor(private http: Http) { }
+    constructor(public http: Http) { }
 
     extractData(res: Response) {
         try {
